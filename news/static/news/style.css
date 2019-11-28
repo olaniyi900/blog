@@ -1,0 +1,21 @@
+.navbtn {
+    font-style: italic;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.mail {
+    color: blue;
+}
+
+.footerdiv {
+    background-color: beige;
+    height: 200px;
+}
+
+.formback {
+    background-color: #9fa6a1;
+    color: white;
+    max-width: 400px;
+    border-radius: 7px;
+}
