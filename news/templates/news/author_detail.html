@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block title-head %} Authors Detail {% endblock %} {% block content %}
+<div class="container">
+    {% for author in author_info %}
+    <div class="card mt-5">
+        <div class="card-body">
+            <h5 class="card-title">{{author.first_name}}</h5>
+
+            <p class="card-text">{{author.date_of_birth}}</p>
+            <cite class="ml-5"><a href="{% url 'news:author_profile' author.id %}">For Athor Detail</a></cite>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

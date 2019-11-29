@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block title-head %} Author Profile {% endblock %} {% block content %}
+<div class="container">
+
+    <div class="card mt-5">
+        <div class="card-body">
+            <h5 class="card-title">{{author.first_name}} {{author.last_name}}</h5>
+            <p>Date Of Birth: {{author.date_of_birth}} </p>
+            <h6>About Me</h6>
+            <p class="card-text">{{author.about_author}}</p>
+            <a href="#" class="btn btn-primary">Author News</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
