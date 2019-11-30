@@ -7,7 +7,7 @@
             <p>Published date: {{news.pub_date}}</p>
             <p class="card-text">{{news.news_content}}</p>
             <a href="#" class="btn btn-primary">read full news</a>
-            <cite class="ml-5">Written By: {{news.author}}</cite>
+            <cite class="ml-5"><a href="{% url 'news:author_profile' news.author.id %}" >Written By: {{news.author}}</a></cite>
         </div>
     </div>
     {% endfor %}

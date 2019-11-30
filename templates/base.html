@@ -18,13 +18,13 @@
         <div class="collapse navbar-collapse d-inline-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item mx-5">
-                    <a class="nav-link navbtn" href="#">Home</a>
+                    <a class="nav-link navbtn" href="{% url 'base' %}">Home</a>
                 </li>
                 <li class="nav-item mx-5">
-                    <a class="nav-link navbtn" href="#">Blog</a>
+                    <a class="nav-link navbtn" href="{% url 'news:index' %}">Blog</a>
                 </li>
                 <li class="nav-item mx-5">
-                    <a class="nav-link navbtn" href="#">Contact</a>
+                    <a class="nav-link navbtn" href="{% url 'news:author_detail' %}">Author</a>
                 </li>
 
             </ul>
@@ -35,10 +35,11 @@
         {% endblock  %}
     </main>
     <footer>
-        <div class="footerdiv mt-4">
+        <div class="footerdiv mt-4" id="contact">
             <i class="material-icons mail m-5">mail_outline</i>
         </div>
     </footer>
+    
 
 </body>
 
