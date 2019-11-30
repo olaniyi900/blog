@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title-head %} Author info form {% endblock %} {% block content %}
+<div class="container mt-3">
+
+    <div class="formback m-auto p-5">
+        <h2>Create Your Story</h2>
+
+        <form method="POST" action=".">
+            {% csrf_token %}
+            <div class="form-group">
+                {{form}}
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
